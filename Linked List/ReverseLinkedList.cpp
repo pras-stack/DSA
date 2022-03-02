@@ -29,7 +29,8 @@ Code : ListNode* reverseList(ListNode* head)
 The recursive approach to reverse a linked list is simple, just we have to divide the linked lists in two parts and i.e first node and the rest of the linked list,
 and then call the recursion for the other part by maintaining the connection.
   
-Code : ListNode* reverseList(ListNode* head) {
+Code : ListNode* reverseList(ListNode* head) 
+{
     if(!head || !(head->next))  return head;
     auto res = reverseList(head->next);
     head->next->next = head;
